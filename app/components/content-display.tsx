@@ -41,10 +41,12 @@ export function ContentCard({
   section,
   locale,
   index,
+  audience,
 }: {
   section: ContentSection;
   locale: Locale;
   index?: number;
+  audience?: string;
 }) {
   return (
     <article className="content-card">
@@ -54,6 +56,7 @@ export function ContentCard({
         </span>
       )}
       <h2>{section.title[locale]}</h2>
+      {audience && <span className="audience-label">{audience}</span>}
       <ContentParagraphs locale={locale} paragraphs={section.paragraphs} />
     </article>
   );

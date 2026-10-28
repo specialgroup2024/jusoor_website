@@ -1,5 +1,6 @@
 import { getLocale } from "@/app/lib/route-locale";
 import { getUi } from "@/app/lib/localized-ui";
+import { contactDetails } from "@/app/reference-content";
 
 export default async function ContactPage({
   params,
@@ -14,11 +15,17 @@ export default async function ContactPage({
       <p className="eyebrow">{ui.contact}</p>
       <h1>{ui.contact}</h1>
       <p className="page-intro">{ui.contactIntro}</p>
-      <div className="placeholder-panel">
-        <span className="placeholder-icon" aria-hidden="true">
-          i
-        </span>
-        <p>{ui.contactPending}</p>
+      <div className="contact-details">
+        <p>
+          <span>{ui.contactEmail}</span>
+          <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
+        </p>
+        <p>
+          <span>{ui.contactPhone}</span>
+          <a href={`tel:${contactDetails.phoneHref}`}>
+            {contactDetails.phoneDisplay}
+          </a>
+        </p>
       </div>
     </section>
   );
