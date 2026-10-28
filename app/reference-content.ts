@@ -11,20 +11,20 @@ export const carouselSlides: Array<{
 }> = [
   {
     title: {
-      en: "We build trust to secure your future",
+      en: "Building trust to protect your future",
       ar: "نبني الثقة لتأمين مستقبلك",
     },
-    subtitle: { en: "Protect Your Property", ar: "احم ممتلكاتك" },
+    subtitle: { en: "Protect your property", ar: "احم ممتلكاتك" },
     description: {
-      en: "Your partner at every step toward security.",
+      en: "Your partner at every step toward greater security.",
       ar: "شريكك في كل خطوة نحو الأمان.",
     },
     buttonText: { en: "Get Quote", ar: "احصل على عرض" },
     href: "/contact",
   },
   {
-    title: { en: "Shield of Trust", ar: "درع الثقة" },
-    subtitle: { en: "Secure Your Shipments", ar: "أمّن شحناتك" },
+    title: { en: "A shield of trust", ar: "درع الثقة" },
+    subtitle: { en: "Secure your shipments", ar: "أمّن شحناتك" },
     description: {
       en: "Protecting your business with trust and expertise.",
       ar: "حماية عملك بالثقة والخبرة.",
@@ -34,10 +34,10 @@ export const carouselSlides: Array<{
   },
   {
     title: {
-      en: "Smart Coverage. Real Protection.",
+      en: "Smart coverage. Real protection.",
       ar: "تغطية ذكية. حماية حقيقية.",
     },
-    subtitle: { en: "Your Health, Our Priority", ar: "صحتك، أولويتنا" },
+    subtitle: { en: "Your health, our priority", ar: "صحتك، أولويتنا" },
     description: {
       en: "Innovative insurance solutions tailored to your needs.",
       ar: "حلول تأمينية مبتكرة مصممة خصيصاً لاحتياجاتك.",
@@ -47,11 +47,11 @@ export const carouselSlides: Array<{
   },
   {
     title: {
-      en: "Protecting What Matters Most",
+      en: "Protecting what matters most",
       ar: "حماية ما يهم أكثر",
     },
     subtitle: {
-      en: "Industrial Protection Solutions",
+      en: "Industrial protection solutions",
       ar: "حلول الحماية الصناعية",
     },
     description: {
@@ -63,10 +63,10 @@ export const carouselSlides: Array<{
   },
   {
     title: {
-      en: "Because Every Risk Deserves a Strategy",
+      en: "Every risk deserves a strategy",
       ar: "لأن كل خطر يستحق استراتيجية",
     },
-    subtitle: { en: "Secure Your Legacy", ar: "أمّن إرثك" },
+    subtitle: { en: "Protect your legacy", ar: "أمّن إرثك" },
     description: {
       en: "Well-crafted plans to face every challenge.",
       ar: "خطط محكمة لمواجهة كل تحدٍ.",
@@ -75,8 +75,8 @@ export const carouselSlides: Array<{
     href: "/contact",
   },
   {
-    title: { en: "We Cover. You Prosper.", ar: "نحن نغطي. أنت تزدهر." },
-    subtitle: { en: "Drive with Confidence", ar: "قُد بثقة" },
+    title: { en: "We protect. You prosper.", ar: "نحن نغطي. أنت تزدهر." },
+    subtitle: { en: "Drive with confidence", ar: "قُد بثقة" },
     description: {
       en: "Your security is the path to your success.",
       ar: "أمانك هو طريق نجاحك.",
@@ -91,23 +91,23 @@ export const companyProfile: Array<{
   content: LocalizedText;
 }> = [
   {
-    title: { en: "Our Vision", ar: "رؤيتنا" },
+    title: { en: "Our vision", ar: "رؤيتنا" },
     content: {
-      en: "Effectively changing the traditional patterns of insurance brokerage in the Egyptian market and identifying the latest international technologies that enable the Egyptian insurance brokerage market to be at the forefront of the Arab and international markets.",
+      en: "To be the most trusted partner in insurance brokerage by providing innovative solutions that meet and exceed our clients’ expectations.",
       ar: "نسعى لأن نكون الشريك الأكثر موثوقية في مجال الوساطة التأمينية، من خلال تقديم حلول مبتكرة تلبي احتياجات عملائنا وتتجاوز توقعاتهم.",
     },
   },
   {
-    title: { en: "Our Mission", ar: "رسالتنا" },
+    title: { en: "Our mission", ar: "رسالتنا" },
     content: {
-      en: "Strengthening the Egyptian insurance market by providing the highest levels of insurance services and solutions across its sectors, using expertise and tools to deliver competitive and effective performance for clients and insurance companies at the technical and financial levels. Promoting insurance awareness and developing technical expertise to support the country’s Gross National Product.",
+      en: "To provide outstanding insurance brokerage services that deliver comprehensive protection for our clients while upholding the highest standards of quality, transparency, and professionalism.",
       ar: "تقديم خدمات وساطة تأمينية متميزة تضمن حماية شاملة لعملائنا، مع الالتزام بأعلى معايير الجودة والشفافية والمهنية.",
     },
   },
   {
-    title: { en: "Our Objective", ar: "أهدافنا" },
+    title: { en: "Our objectives", ar: "أهدافنا" },
     content: {
-      en: "Improving the professional and service level of insurance brokerage activities in the Arab Republic of Egypt by targeting leaders and experts across the Egyptian insurance market, who can provide insurance activities for companies and individuals at a professional level that reflects the market’s size and aspirations.",
+      en: "To build long-term relationships with our clients through tailored insurance solutions, exceptional customer service, and a contribution to the development of the insurance industry.",
       ar: "نهدف إلى بناء علاقات طويلة الأمد مع عملائنا من خلال تقديم حلول تأمينية مخصصة، وضمان خدمة عملاء استثنائية، والمساهمة في تطوير صناعة التأمين.",
     },
   },
