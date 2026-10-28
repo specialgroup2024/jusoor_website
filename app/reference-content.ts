@@ -11,20 +11,20 @@ export const carouselSlides: Array<{
 }> = [
   {
     title: {
-      en: "We build trust to secure your future",
+      en: "Building trust to protect your future",
       ar: "نبني الثقة لتأمين مستقبلك",
     },
-    subtitle: { en: "Protect Your Property", ar: "احم ممتلكاتك" },
+    subtitle: { en: "Protect your property", ar: "احم ممتلكاتك" },
     description: {
-      en: "Your partner at every step toward security.",
+      en: "Your partner at every step toward greater security.",
       ar: "شريكك في كل خطوة نحو الأمان.",
     },
     buttonText: { en: "Get Quote", ar: "احصل على عرض" },
     href: "/contact",
   },
   {
-    title: { en: "Shield of Trust", ar: "درع الثقة" },
-    subtitle: { en: "Secure Your Shipments", ar: "أمّن شحناتك" },
+    title: { en: "A shield of trust", ar: "درع الثقة" },
+    subtitle: { en: "Secure your shipments", ar: "أمّن شحناتك" },
     description: {
       en: "Protecting your business with trust and expertise.",
       ar: "حماية عملك بالثقة والخبرة.",
@@ -34,10 +34,10 @@ export const carouselSlides: Array<{
   },
   {
     title: {
-      en: "Smart Coverage. Real Protection.",
+      en: "Smart coverage. Real protection.",
       ar: "تغطية ذكية. حماية حقيقية.",
     },
-    subtitle: { en: "Your Health, Our Priority", ar: "صحتك، أولويتنا" },
+    subtitle: { en: "Your health, our priority", ar: "صحتك، أولويتنا" },
     description: {
       en: "Innovative insurance solutions tailored to your needs.",
       ar: "حلول تأمينية مبتكرة مصممة خصيصاً لاحتياجاتك.",
@@ -47,11 +47,11 @@ export const carouselSlides: Array<{
   },
   {
     title: {
-      en: "Protecting What Matters Most",
+      en: "Protecting what matters most",
       ar: "حماية ما يهم أكثر",
     },
     subtitle: {
-      en: "Industrial Protection Solutions",
+      en: "Industrial protection solutions",
       ar: "حلول الحماية الصناعية",
     },
     description: {
@@ -63,10 +63,10 @@ export const carouselSlides: Array<{
   },
   {
     title: {
-      en: "Because Every Risk Deserves a Strategy",
+      en: "Every risk deserves a strategy",
       ar: "لأن كل خطر يستحق استراتيجية",
     },
-    subtitle: { en: "Secure Your Legacy", ar: "أمّن إرثك" },
+    subtitle: { en: "Protect your legacy", ar: "أمّن إرثك" },
     description: {
       en: "Well-crafted plans to face every challenge.",
       ar: "خطط محكمة لمواجهة كل تحدٍ.",
@@ -75,8 +75,8 @@ export const carouselSlides: Array<{
     href: "/contact",
   },
   {
-    title: { en: "We Cover. You Prosper.", ar: "نحن نغطي. أنت تزدهر." },
-    subtitle: { en: "Drive with Confidence", ar: "قُد بثقة" },
+    title: { en: "We protect. You prosper.", ar: "نحن نغطي. أنت تزدهر." },
+    subtitle: { en: "Drive with confidence", ar: "قُد بثقة" },
     description: {
       en: "Your security is the path to your success.",
       ar: "أمانك هو طريق نجاحك.",

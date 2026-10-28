@@ -983,6 +983,14 @@ html[lang="en"] body {
   font-family: Inter, "Segoe UI", Arial, sans-serif;
 }
 
+html[lang="ar"] .brand {
+  gap: 0.75rem;
+}
+
+html[lang="ar"] .site-footer span {
+  text-align: start;
+}
+
 .site-header,
 .site-main,
 .site-footer,
