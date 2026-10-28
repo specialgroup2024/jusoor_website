@@ -19,7 +19,7 @@ export default async function HomePage({
   return (
     <>
       <HomeCarousel locale={locale} />
-      <section aria-labelledby="assets-heading" className="home-intro">
+      <section aria-labelledby="assets-heading" className="home-intro" data-reveal>
         <p className="eyebrow">{ui.aboutLabel}</p>
         <h2 id="assets-heading">{home.hero.title[locale]}</h2>
         <ContentParagraphs locale={locale} paragraphs={home.hero.paragraphs} />
@@ -38,7 +38,7 @@ export default async function HomePage({
             locale={locale}
             section={home.why}
           />
-          <ul aria-label={ui.whyLabel} className="feature-list">
+          <ul aria-label={ui.whyLabel} className="feature-list" data-reveal>
             {ui.features.map((feature) => (
               <li key={feature}>{feature}</li>
             ))}

@@ -15,14 +15,14 @@ export default async function ContactPage({
       <p className="eyebrow">{ui.contact}</p>
       <h1>{ui.contact}</h1>
       <p className="page-intro">{ui.contactIntro}</p>
-      <div className="contact-details">
+      <div className="contact-details" data-reveal>
         <p>
           <span>{ui.contactEmail}</span>
           <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
         </p>
         <p>
           <span>{ui.contactPhone}</span>
-          <a href={`tel:${contactDetails.phoneHref}`}>
+          <a dir="ltr" href={`tel:${contactDetails.phoneHref}`}>
             {contactDetails.phoneDisplay}
           </a>
         </p>
