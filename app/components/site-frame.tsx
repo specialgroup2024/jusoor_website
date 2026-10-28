@@ -23,6 +23,8 @@ export default function SiteFrame({
     { href: "/about", label: ui.about },
     { href: "/services", label: ui.solutions },
     { href: "/coverage", label: ui.coverage },
+    { href: "/customer-rights", label: ui.customerRights },
+    { href: "/customer-complaints", label: ui.customerComplaints },
     { href: "/contact", label: ui.contact },
   ];
 
