@@ -4,7 +4,7 @@ export default function RedirectRootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html dir="rtl" lang="ar">
       <body>{children}</body>
     </html>
   );
