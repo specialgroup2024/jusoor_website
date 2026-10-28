@@ -1,3 +1,4 @@
+import { CardIcon } from "@/app/components/card-icon";
 import { ContentCard } from "@/app/components/content-display";
 import { siteContent } from "@/app/content";
 import { getLocale } from "@/app/lib/route-locale";
@@ -20,6 +21,7 @@ export default async function CoveragePage({
       <div className="content-grid">
         {coverage.items.map((section, index) => (
           <ContentCard
+            icon={<CardIcon index={index} />}
             index={index}
             key={section.title.en}
             locale={locale}
@@ -27,7 +29,7 @@ export default async function CoveragePage({
           />
         ))}
       </div>
-      <p className="page-intro">
+      <p className="page-intro page-note">
         {locale === "ar"
           ? "هذه المعلومات عامة ولا تمثل عرضًا ملزمًا أو ضمانًا للتغطية. تسري الشروط والاستثناءات والحدود الواردة في وثيقة التأمين الصادرة عن شركة التأمين."
           : "This information is general and is not a binding offer or guarantee of coverage. The terms, exclusions, and limits in the policy issued by the insurer apply."}

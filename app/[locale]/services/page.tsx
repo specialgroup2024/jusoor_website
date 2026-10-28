@@ -1,3 +1,4 @@
+import { CardIcon } from "@/app/components/card-icon";
 import { ContentCard } from "@/app/components/content-display";
 import { siteContent } from "@/app/content";
 import { getLocale } from "@/app/lib/route-locale";
@@ -19,6 +20,7 @@ export default async function ServicesPage({
       <div className="content-grid">
         {solutions.items.map((section, index) => (
           <ContentCard
+            icon={<CardIcon index={index} />}
             index={index}
             key={section.title.en}
             locale={locale}

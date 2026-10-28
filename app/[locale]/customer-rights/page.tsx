@@ -1,3 +1,4 @@
+import { CardIcon } from "@/app/components/card-icon";
 import { getLocale } from "@/app/lib/route-locale";
 import { getUi } from "@/app/lib/localized-ui";
 
@@ -27,14 +28,27 @@ export default async function CustomerRightsPage({ params }: { params: Promise<{
       <h1>{ui.customerRights}</h1>
       <p className="page-intro">{ui.rightsIntro}</p>
       <div className="content-grid">
-        {rights[locale].map((item) => (
-          <article className="content-card" key={item.title}>
+        {rights[locale].map((item, index) => (
+          <article
+            className="content-card"
+            data-reveal
+            key={item.title}
+            style={{ "--reveal-delay": `${Math.min(index, 8) * 60}ms` } as React.CSSProperties}
+          >
+            <div aria-hidden="true" className="card-topline">
+              <span className="card-icon">
+                <CardIcon index={index} />
+              </span>
+              <span className="card-number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+            </div>
             <h2>{item.title}</h2>
             <p>{item.text}</p>
           </article>
         ))}
       </div>
-      <p className="page-intro">
+      <p className="page-intro page-note">
         {locale === "ar"
           ? "هذه الصفحة توضح مبادئ الخدمة العامة ولا تحل محل الحقوق أو الإجراءات المنصوص عليها في القوانين واللوائح أو وثائق التأمين المعمول بها. يجب مراجعة النص النهائي واعتماده من الشركة قبل النشر."
           : "This page describes general service principles and does not replace rights or procedures established by applicable laws, regulations, or insurance policies. The company should review and approve the final wording before publication."}

@@ -27,14 +27,22 @@ export default async function CustomerComplaintsPage({ params }: { params: Promi
       <h1>{ui.customerComplaints}</h1>
       <p className="page-intro">{ui.complaintsIntro}</p>
       <div className="content-grid">
-        {steps[locale].map((item) => (
-          <article className="content-card" key={item.title}>
+        {steps[locale].map((item, index) => (
+          <article
+            className="content-card step-card"
+            data-reveal
+            key={item.title}
+            style={{ "--reveal-delay": `${index * 70}ms` } as React.CSSProperties}
+          >
+            <span aria-hidden="true" className="step-badge">
+              {index + 1}
+            </span>
             <h2>{item.title}</h2>
             <p>{item.text}</p>
           </article>
         ))}
       </div>
-      <div className="content-card">
+      <div className="content-card" data-reveal>
         <h2>{locale === "ar" ? "تقديم شكوى" : "Submit a complaint"}</h2>
         <p>
           {locale === "ar"
@@ -48,7 +56,7 @@ export default async function CustomerComplaintsPage({ params }: { params: Promi
         </p>
         <p><Link href={localizePath(locale, "/contact")}>{ui.contact}</Link></p>
       </div>
-      <p className="page-intro">
+      <p className="page-intro page-note">
         {locale === "ar"
           ? "قبل النشر، يجب على الشركة اعتماد بيانات مسؤول الشكاوى، ومواعيد الإقرار والاستجابة، وإجراءات التصعيد، والقنوات التنظيمية ذات الصلة. لا تتضمن هذه الصفحة مددًا أو التزامات تنظيمية غير مؤكدة."
           : "Before publication, the company must approve the complaints owner, acknowledgement and response times, escalation process, and relevant regulatory channels. This page intentionally does not state unverified deadlines or regulatory obligations."}
