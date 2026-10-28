@@ -953,3 +953,95 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Arabic is the content source; English follows the same meaning and design system. */
+html[lang="ar"] body {
+  font-family: Tahoma, Arial, "Noto Sans Arabic", sans-serif;
+  letter-spacing: normal;
+}
+
+html[lang="ar"] :is(h1, h2, h3, h4, .brand-name, .nav-list a, .button, .eyebrow, .info-card) {
+  letter-spacing: normal;
+}
+
+html[lang="ar"] .hero-carousel .eyebrow {
+  letter-spacing: normal;
+}
+
+html[lang="ar"] .hero-carousel h1,
+html[lang="ar"] .content-page h1,
+html[lang="ar"] .home-intro h2,
+html[lang="ar"] .home-sections h2,
+html[lang="ar"] .content-page h2,
+html[lang="ar"] .info-card h3 {
+  font-family: Tahoma, Arial, "Noto Sans Arabic", sans-serif;
+  line-height: 1.45;
+}
+
+html[lang="en"] body {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+html[lang="ar"] .brand {
+  gap: 0.75rem;
+}
+
+html[lang="ar"] .site-footer span {
+  text-align: start;
+}
+
+.site-header,
+.site-main,
+.site-footer,
+.nav-list,
+.header-controls,
+.home-sections,
+.feature-list,
+.info-card,
+.placeholder-panel {
+  min-width: 0;
+}
+
+.site-main {
+  overflow-wrap: anywhere;
+}
+
+.language-switch {
+  display: inline-flex;
+  min-height: 2.6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--accent-dark);
+  font-size: 0.88rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.language-switch:hover {
+  border-color: #b8dcdc;
+  background: #eaf6f6;
+}
+
+@media (max-width: 760px) {
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list li {
+    max-width: 100%;
+  }
+
+  .nav-list a {
+    line-height: 1.55;
+    white-space: normal;
+  }
+
+  html[lang="ar"] .hero-carousel {
+    min-height: 40rem;
+  }
+}
